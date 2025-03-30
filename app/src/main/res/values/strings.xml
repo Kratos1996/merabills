@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">MeraBills</string>
+    <string name="add_payment_underline"><u>Add Payment</u>.</string>
+    <string name="add_payment_more_underline"><u>Add More Payment</u></string>
+    <string name="add_payment">Add Payment</string>
+    <string name="total_amount">Total Amount :</string>
+    <string name="zero">0</string>
+    <string name="ruppe_symbol">₹</string>
+    <string name="save">Save</string>
+    <string name="payment_details">Payment Details</string>
+    <string name="add_fund">Add Fund</string>
+    <string name="select_payment_type">Select Payment Type</string>
+    <string name="bank_name">Bank Name</string>
+    <string name="transaction_id">Transaction Id</string>
+    <string name="credit_card_number">Credit Card Number</string>
+    <string name="expiry_date">Expiry Date</string>
+    <string name="mmYYYY">MM/YYYY (Expiry Date)</string>
+    <string name="please_select_payment_type">Please select payment type</string>
+    <string name="payment_details_saved_successfully">Payment details saved successfully</string>
+    <string name="please_enter_expiry_date">Please enter expiry date</string>
+    <string name="please_enter_credit_card_number">Please enter credit card number</string>
+    <string name="please_enter_bank_name">Please enter bank name</string>
+    <string name="please_enter_transaction_id">Please enter transaction id</string>
+</resources>

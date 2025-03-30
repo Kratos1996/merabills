@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.MeraBills" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="colorPrimary">@color/text_primary</item>
+        <item name="colorSurfaceVariant">@color/colorSurfaceVariant</item>
+        <item name="colorOutline">@color/colorOutline</item>
+        <item name="colorOnSurface">@color/colorOnSurface</item>
+        <item name="android:textColor">@color/text_primary</item>
+    </style>
+</resources>
