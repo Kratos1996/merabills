@@ -1,5 +1,6 @@
 package com.ishant.merabills.data.local.deserialzation;
 import com.google.gson.*;
+import com.ishant.merabills.application.AppConstant;
 import com.ishant.merabills.data.local.models.BankPaymentDetails;
 import com.ishant.merabills.data.local.models.CashPaymentDetails;
 import com.ishant.merabills.data.local.models.CreditCardPaymentDetails;
@@ -19,15 +20,15 @@ public class PaymentDetailDeserializer implements JsonDeserializer<PaymentDetail
 
         // Based on paymentType, instantiate the proper subclass.
         switch (paymentType) {
-            case "Cash":
+            case AppConstant.CASH:
                 return new CashPaymentDetails(totalAmount);
 
-            case "Bank":
+            case AppConstant.BANK:
                 String bankName = jsonObj.has("bankName") ? jsonObj.get("bankName").getAsString() : null;
                 String transactionIdBank = jsonObj.has("transactionId") ? jsonObj.get("transactionId").getAsString() : null;
                 return new BankPaymentDetails(totalAmount, bankName, transactionIdBank);
 
-            case "Credit Card":
+            case AppConstant.CREDIT_CARD:
                 String creditCardNumber = jsonObj.has("creditCardNumber") ? jsonObj.get("creditCardNumber").getAsString() : null;
                 String expiryDate = jsonObj.has("expiryDate") ? jsonObj.get("expiryDate").getAsString() : null;
                 String transactionIdCC = jsonObj.has("transactionId") ? jsonObj.get("transactionId").getAsString() : null;
